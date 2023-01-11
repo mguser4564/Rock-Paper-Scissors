@@ -8,22 +8,51 @@
 </body>
 <script>
 
-function getComputerChoice(){
-  let ComputerChoice = Math.floor(Math.random() * 3);
+  function getComputerChoice() {
+    let ComputerChoice = Math.floor(Math.random() * 3);
     if (ComputerChoice == 0) {
-      console.log(`ROCK`);
-
+      ///   console.log(`ROCK`);
+      return ComputerChoice;
     } else if (ComputerChoice == 1) {
-      console.log(`PAPER`);
-      
+      ///  console.log(`PAPER`);
+      return ComputerChoice;
     } else if (ComputerChoice == 2) {
-      console.log(`SCISSORS`);
-
+      /// console.log(`SCISSORS`);
+      return ComputerChoice;
     };
-};
+  };
 
-getComputerChoice();
+  function playRound(playerSelection, computerSelection) {
+    if (playerSelection == "ROCK" && computerSelection == 0) {
+      console.log(`The game is a tie. You both chose ROCK. Please play again!`);
+    } else if (playerSelection == "ROCK" && computerSelection == 1) {
+      console.log(`The COMPUTER wins. PAPER(C) beats ROCK(P). Please play again!`);
+    } else if (playerSelection == "ROCK" && computerSelection == 2) {
+      console.log(`The PLAYER wins. ROCK(P) beats SCISSORS(C). Please play again!`);
+    } else if (playerSelection == "PAPER" && computerSelection == 0) {
+      console.log(`The PLAYER wins. PAPER(P) beats ROCK(C). Please play again!`);
+    } else if (playerSelection == "PAPER" && computerSelection == 1) {
+      console.log(`The game is a tie. You both chose PAPER. Please play again!`);
+    } else if (playerSelection == "PAPER" && computerSelection == 2) {
+      console.log(`The COMPUTER wins. SCISSORS(C) beats PAPER(P). Please play again!`);
+    } else if (playerSelection == "SCISSORS" && computerSelection == 0) {
+      console.log(`The COMPUTER wins. ROCK(C) beats SCISSORS(P). Please play again!`);
+    } else if (playerSelection == "SCISSORS" && computerSelection == 1) {
+      console.log(`The PLAYER wins. SCISSORS(P)) beats PAPER(C). Please play again!`);
+    } else if (playerSelection == "SCISSORS" && computerSelection == 2) {
+      console.log(`The game is a tie. You both chose SCISSORS. Please play again!`);
+    };
+  }
+  const playerInput = 'roCk'
+  const playerSelection = playerInput.toUpperCase();
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
+
+
+
+
 
 
 </script>
+
 </html>
