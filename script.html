@@ -7,5 +7,23 @@
   <body>
 </body>
 <script>
+
+function getComputerChoice(){
+  let ComputerChoice = Math.floor(Math.random() * 3);
+    if (ComputerChoice == 0) {
+      console.log(`ROCK`);
+
+    } else if (ComputerChoice == 1) {
+      console.log(`PAPER`);
+      
+    } else if (ComputerChoice == 2) {
+      console.log(`SCISSORS`);
+
+    };
+};
+
+getComputerChoice();
+
+
 </script>
 </html>
