@@ -79,12 +79,27 @@
     }
 
   function game() {
+    let tieGame = 0
+    let playerScore = 0
+    let computerScore = 0
     for (let i = 0; i < 5; i++) {
       let results = playRound();
-      if (results == "TIE") { console.log("the game is a tie");}
-      if (results == "COMPUTER") { console.log("the computer wins");}
-      if (results == "PLAYER") { console.log("the player wins");}
+      if (results == "TIE") {
+        tieGame = tieGame + 1
+        console.log("this round is a tie.");} 
+      if (results == "COMPUTER") { 
+        computerScore = computerScore + 1
+        console.log("the computer wins this round.");}
+      if (results == "PLAYER") { 
+        playerScore = playerScore + 1
+        console.log("the player wins this round.");}
     }
+    if (playerScore > computerScore) {
+              console.log(`The player won ${playerScore} and the computer won ${computerScore}. There were ${tieGame} tie(s). The player wins !!!`)
+            } else if (computerScore > playerScore) {
+              console.log(`The player won ${playerScore} and the computer won ${computerScore}. There were ${tieGame} tie(s). The computer wins !!!`)
+            }
+            else { console.log(`The player won ${playerScore} and the computer won ${computerScore}. There were/was ${tieGame} tie(s). This is a tie !!!`) }
   };
 
 
