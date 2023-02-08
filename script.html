@@ -35,6 +35,7 @@
   };
 
 
+//Invokes getComputerChoice and getPlayerChoice, compares their return values.
 // Return a string value which indicates if the game is a tie, the computer won, or the player won.
     function playRound() {
       let playerChoice = getPlayerChoice();
@@ -78,6 +79,8 @@
       };
     }
 
+// Plays a game of five rounds and announces the winner of each round.
+// Tallies the scores and announces a final winner from a best of 5 game along with each score.
   function game() {
     let tieGame = 0
     let playerScore = 0
