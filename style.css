@@ -82,7 +82,7 @@ body {
     padding-bottom: 25px;
   }
 
-  .Button {
+  button {
     background: #d05228;
     color: #e0e0ce;
     font-weight: bold;
@@ -92,7 +92,13 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 12px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow 0.05s ease-in-out;
   }
+  button:active {
+    box-shadow: 0 0 20px rgb(255, 162, 0);
+  }
+
   
   .Body-2{
     background-color: #0b405a;
