@@ -1,0 +1,132 @@
+/* * {
+  border: solid red 1px;
+} */
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #e0e0ce;
+  }
+  
+  .Header {
+    background-color: #0b405a;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .Header-Logo {
+    font-weight: 900;
+    font-size: 36px;
+    color: 	#d05228;
+    -webkit-text-stroke: 1px #e0e0ce;
+  }
+  
+  .Body-1 {
+    background-color:	#dfa927;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  .Body-1-instructions{
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .Body-2-instructions{
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .Body-1-Group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 52px;
+    
+  }
+  
+  .Body-1-Choice{
+    flex: 0 1 200px;
+    text-align: center;
+    font-weight: 600;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .Body-1-Choice img {
+    margin-bottom: 10px;
+  }
+
+  .Body-1-Score{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-weight: 600;
+    padding-bottom: 25px;
+  }
+
+  .Button {
+    background: #d05228;
+    color: #e0e0ce;
+    font-weight: bold;
+    border: solid 2px #e0e0ce;
+    margin-top: 15px;
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+  }
+  
+  .Body-2{
+    background-color: #0b405a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  
+  .Body-2-Group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 52px;
+  }
+  
+  .Body-2-Choice{
+    flex: 0 1 200px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .Footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    flex-wrap: wrap;
+    background-color: #0b405a;
+    color: #e0e0ce;
+  }
